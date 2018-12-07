@@ -1,0 +1,2123 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: YOLO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "YOLO.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "YOLO"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : YOLO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd" in Library work.
+Architecture behavioral of Entity generate_propagate_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd" in Library work.
+Architecture behavioral of Entity carry_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd" in Library work.
+Architecture behavioral of Entity sum_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add4bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Dec5to32.vhd" in Library work.
+Architecture behavioral of Entity dec5to32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And_Unit.vhd" in Library work.
+Architecture behavioral of Entity and_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register32bit.vhd" in Library work.
+Architecture behavioral of Entity register32bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux32to1.vhd" in Library work.
+Architecture behavioral of Entity mux32to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Compare_Module.vhd" in Library work.
+Architecture behavioral of Entity compare_module is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add32bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" in Library work.
+Architecture behavioral of Entity sub32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And32_Unit.vhd" in Library work.
+Architecture behavioral of Entity and32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Or_Unit.vhd" in Library work.
+Architecture behavioral of Entity or_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Not_Unit.vhd" in Library work.
+Architecture behavioral of Entity not_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd" in Library work.
+Architecture behavioral of Entity sra_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd" in Library work.
+Architecture behavioral of Entity sr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd" in Library work.
+Architecture behavioral of Entity sl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd" in Library work.
+Architecture behavioral of Entity rl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd" in Library work.
+Architecture behavioral of Entity rr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd" in Library work.
+Architecture behavioral of Entity cout_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd" in Library work.
+Architecture behavioral of Entity overflow_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd" in Library work.
+Architecture behavioral of Entity alu_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd" in Library work.
+Architecture behavioral of Entity zero_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Data_MEM.vhd" in Library work.
+Architecture syn of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/AdderPC4.vhd" in Library work.
+Architecture behavioral of Entity adderpc4 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/AdderPC4_Imm.vhd" in Library work.
+Architecture behavioral of Entity adderpc4_imm is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/IF_MEM.vhd" in Library work.
+Architecture syn of Entity if_mem is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux3to1.vhd" in Library work.
+Architecture behavioral of Entity mux3to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd" in Library work.
+Architecture behavioral of Entity mux2to1_5bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd" in Library work.
+Architecture behavioral of Entity imm16_to_32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register_File.vhd" in Library work.
+Architecture behavioral of Entity register_file is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Top.vhd" in Library work.
+Architecture behavioral of Entity alu_top is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/ALUSTAGE.vhd" in Library work.
+Architecture behavioral of Entity alustage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd" in Library work.
+Architecture behavioral of Entity decstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/IFSTAGE.vhd" in Library work.
+Architecture behavioral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/MEMSTAGE.vhd" in Library work.
+Architecture behavioral of Entity memstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero.vhd" in Library work.
+Architecture behavioral of Entity zerofill is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/CONTROL.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/YOLO.vhd" in Library work.
+Architecture behavioral of Entity yolo is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <YOLO> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DATAPATH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CONTROL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALUSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DECSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEMSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ZeroFill> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu_Top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux3to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1_5bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Imm16_to_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register_File> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AdderPC4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AdderPC4_Imm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IF_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Data_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Add32bit_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sub32_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <And32_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Or_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Not_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sra_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sr_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sl_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Rl_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Rr_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Cout_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Overflow_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Zero_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Dec5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <And_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux32to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Compare_Module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Add4bit_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Generate_Propagate_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Carry_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sum_Unit> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <YOLO> in library <work> (Architecture <behavioral>).
+Entity <YOLO> analyzed. Unit <YOLO> generated.
+
+Analyzing Entity <DATAPATH> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" line 120: Unconnected output port 'Cout' of component 'ALUSTAGE'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" line 120: Unconnected output port 'Ovf' of component 'ALUSTAGE'.
+Entity <DATAPATH> analyzed. Unit <DATAPATH> generated.
+
+Analyzing Entity <ALUSTAGE> in library <work> (Architecture <behavioral>).
+Entity <ALUSTAGE> analyzed. Unit <ALUSTAGE> generated.
+
+Analyzing Entity <Alu_Top> in library <work> (Architecture <behavioral>).
+Entity <Alu_Top> analyzed. Unit <Alu_Top> generated.
+
+Analyzing Entity <Add32bit_Unit> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 55: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 60: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 65: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 70: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 75: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 80: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 85: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+Entity <Add32bit_Unit> analyzed. Unit <Add32bit_Unit> generated.
+
+Analyzing Entity <Add4bit_Unit> in library <work> (Architecture <behavioral>).
+Entity <Add4bit_Unit> analyzed. Unit <Add4bit_Unit> generated.
+
+Analyzing Entity <Generate_Propagate_Unit> in library <work> (Architecture <behavioral>).
+Entity <Generate_Propagate_Unit> analyzed. Unit <Generate_Propagate_Unit> generated.
+
+Analyzing Entity <Carry_Unit> in library <work> (Architecture <behavioral>).
+Entity <Carry_Unit> analyzed. Unit <Carry_Unit> generated.
+
+Analyzing Entity <Sum_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sum_Unit> analyzed. Unit <Sum_Unit> generated.
+
+Analyzing Entity <Sub32_Unit> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 58: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 63: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 68: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 73: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 78: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 83: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 88: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+Entity <Sub32_Unit> analyzed. Unit <Sub32_Unit> generated.
+
+Analyzing Entity <And32_Unit> in library <work> (Architecture <behavioral>).
+Entity <And32_Unit> analyzed. Unit <And32_Unit> generated.
+
+Analyzing Entity <Or_Unit> in library <work> (Architecture <behavioral>).
+Entity <Or_Unit> analyzed. Unit <Or_Unit> generated.
+
+Analyzing Entity <Not_Unit> in library <work> (Architecture <behavioral>).
+Entity <Not_Unit> analyzed. Unit <Not_Unit> generated.
+
+Analyzing Entity <Sra_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sra_Unit> analyzed. Unit <Sra_Unit> generated.
+
+Analyzing Entity <Sr_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sr_Unit> analyzed. Unit <Sr_Unit> generated.
+
+Analyzing Entity <Sl_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sl_Unit> analyzed. Unit <Sl_Unit> generated.
+
+Analyzing Entity <Rl_Unit> in library <work> (Architecture <behavioral>).
+Entity <Rl_Unit> analyzed. Unit <Rl_Unit> generated.
+
+Analyzing Entity <Rr_Unit> in library <work> (Architecture <behavioral>).
+Entity <Rr_Unit> analyzed. Unit <Rr_Unit> generated.
+
+Analyzing Entity <Cout_Unit> in library <work> (Architecture <behavioral>).
+Entity <Cout_Unit> analyzed. Unit <Cout_Unit> generated.
+
+Analyzing Entity <Overflow_Unit> in library <work> (Architecture <behavioral>).
+Entity <Overflow_Unit> analyzed. Unit <Overflow_Unit> generated.
+
+Analyzing Entity <Alu_Unit> in library <work> (Architecture <behavioral>).
+Entity <Alu_Unit> analyzed. Unit <Alu_Unit> generated.
+
+Analyzing Entity <Zero_Unit> in library <work> (Architecture <behavioral>).
+Entity <Zero_Unit> analyzed. Unit <Zero_Unit> generated.
+
+Analyzing Entity <DECSTAGE> in library <work> (Architecture <behavioral>).
+Entity <DECSTAGE> analyzed. Unit <DECSTAGE> generated.
+
+Analyzing Entity <Mux3to1> in library <work> (Architecture <behavioral>).
+Entity <Mux3to1> analyzed. Unit <Mux3to1> generated.
+
+Analyzing Entity <Mux2to1_5bit> in library <work> (Architecture <behavioral>).
+Entity <Mux2to1_5bit> analyzed. Unit <Mux2to1_5bit> generated.
+
+Analyzing Entity <Imm16_to_32> in library <work> (Architecture <behavioral>).
+Entity <Imm16_to_32> analyzed. Unit <Imm16_to_32> generated.
+
+Analyzing Entity <Register_File> in library <work> (Architecture <behavioral>).
+Entity <Register_File> analyzed. Unit <Register_File> generated.
+
+Analyzing Entity <Dec5to32> in library <work> (Architecture <behavioral>).
+Entity <Dec5to32> analyzed. Unit <Dec5to32> generated.
+
+Analyzing Entity <And_Unit> in library <work> (Architecture <behavioral>).
+Entity <And_Unit> analyzed. Unit <And_Unit> generated.
+
+Analyzing Entity <Register32bit> in library <work> (Architecture <behavioral>).
+Entity <Register32bit> analyzed. Unit <Register32bit> generated.
+
+Analyzing Entity <Mux32to1> in library <work> (Architecture <behavioral>).
+Entity <Mux32to1> analyzed. Unit <Mux32to1> generated.
+
+Analyzing Entity <Compare_Module> in library <work> (Architecture <behavioral>).
+Entity <Compare_Module> analyzed. Unit <Compare_Module> generated.
+
+Analyzing Entity <IFSTAGE> in library <work> (Architecture <behavioral>).
+Entity <IFSTAGE> analyzed. Unit <IFSTAGE> generated.
+
+Analyzing Entity <AdderPC4> in library <work> (Architecture <behavioral>).
+Entity <AdderPC4> analyzed. Unit <AdderPC4> generated.
+
+Analyzing Entity <AdderPC4_Imm> in library <work> (Architecture <behavioral>).
+Entity <AdderPC4_Imm> analyzed. Unit <AdderPC4_Imm> generated.
+
+Analyzing Entity <IF_MEM> in library <work> (Architecture <syn>).
+Entity <IF_MEM> analyzed. Unit <IF_MEM> generated.
+
+Analyzing Entity <MEMSTAGE> in library <work> (Architecture <behavioral>).
+Entity <MEMSTAGE> analyzed. Unit <MEMSTAGE> generated.
+
+Analyzing Entity <Data_MEM> in library <work> (Architecture <syn>).
+Entity <Data_MEM> analyzed. Unit <Data_MEM> generated.
+
+Analyzing Entity <Mux2to1> in library <work> (Architecture <behavioral>).
+Entity <Mux2to1> analyzed. Unit <Mux2to1> generated.
+
+Analyzing Entity <ZeroFill> in library <work> (Architecture <behavioral>).
+Entity <ZeroFill> analyzed. Unit <ZeroFill> generated.
+
+Analyzing Entity <CONTROL> in library <work> (Architecture <behavioral>).
+Entity <CONTROL> analyzed. Unit <CONTROL> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CONTROL>.
+    Related source file is "C:/Users/George/Desktop/Lab2/CONTROL.vhd".
+    Found finite state machine <FSM_0> for signal <Fsm>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 35                                             |
+    | Inputs             | 14                                             |
+    | Outputs            | 16                                             |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Mem_DataIn_sel>.
+    Found 4-bit register for signal <ALU_func>.
+    Found 1-bit register for signal <Mem_DataOut_sel>.
+    Found 1-bit register for signal <Rst>.
+    Found 1-bit register for signal <PC_LdEn>.
+    Found 2-bit register for signal <RF_WrData_sel>.
+    Found 1-bit register for signal <RF_B_sel>.
+    Found 1-bit register for signal <Mem_WrEn>.
+    Found 1-bit register for signal <PC_sel>.
+    Found 1-bit register for signal <ALU_Bin_sel>.
+    Found 1-bit register for signal <RF_WrEn>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  15 D-type flip-flop(s).
+Unit <CONTROL> synthesized.
+
+
+Synthesizing Unit <Mux2to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux2to1.vhd".
+Unit <Mux2to1> synthesized.
+
+
+Synthesizing Unit <ZeroFill>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Zero.vhd".
+WARNING:Xst:647 - Input <In0<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ZeroFill> synthesized.
+
+
+Synthesizing Unit <And32_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/And32_Unit.vhd".
+Unit <And32_Unit> synthesized.
+
+
+Synthesizing Unit <Or_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Or_Unit.vhd".
+Unit <Or_Unit> synthesized.
+
+
+Synthesizing Unit <Not_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Not_Unit.vhd".
+Unit <Not_Unit> synthesized.
+
+
+Synthesizing Unit <Sra_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd".
+WARNING:Xst:647 - Input <A<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sra_Unit> synthesized.
+
+
+Synthesizing Unit <Sr_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd".
+WARNING:Xst:647 - Input <A<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sr_Unit> synthesized.
+
+
+Synthesizing Unit <Sl_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd".
+WARNING:Xst:647 - Input <A<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sl_Unit> synthesized.
+
+
+Synthesizing Unit <Rl_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd".
+Unit <Rl_Unit> synthesized.
+
+
+Synthesizing Unit <Rr_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd".
+Unit <Rr_Unit> synthesized.
+
+
+Synthesizing Unit <Cout_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd".
+Unit <Cout_Unit> synthesized.
+
+
+Synthesizing Unit <Overflow_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd".
+Unit <Overflow_Unit> synthesized.
+
+
+Synthesizing Unit <Alu_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd".
+Unit <Alu_Unit> synthesized.
+
+
+Synthesizing Unit <Zero_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd".
+Unit <Zero_Unit> synthesized.
+
+
+Synthesizing Unit <Generate_Propagate_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd".
+    Found 4-bit xor2 for signal <p>.
+Unit <Generate_Propagate_Unit> synthesized.
+
+
+Synthesizing Unit <Carry_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd".
+Unit <Carry_Unit> synthesized.
+
+
+Synthesizing Unit <Sum_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd".
+WARNING:Xst:647 - Input <c<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit xor2 for signal <s>.
+Unit <Sum_Unit> synthesized.
+
+
+Synthesizing Unit <Mux3to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux3to1.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <data>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <Mux3to1> synthesized.
+
+
+Synthesizing Unit <Mux2to1_5bit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd".
+Unit <Mux2to1_5bit> synthesized.
+
+
+Synthesizing Unit <Imm16_to_32>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <data_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <Imm16_to_32> synthesized.
+
+
+Synthesizing Unit <Dec5to32>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Dec5to32.vhd".
+    Found 32x32-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Dec5to32> synthesized.
+
+
+Synthesizing Unit <And_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/And_Unit.vhd".
+Unit <And_Unit> synthesized.
+
+
+Synthesizing Unit <Register32bit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Register32bit.vhd".
+    Found 32-bit register for signal <data>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register32bit> synthesized.
+
+
+Synthesizing Unit <Mux32to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux32to1.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <data>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <Mux32to1> synthesized.
+
+
+Synthesizing Unit <Compare_Module>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Compare_Module.vhd".
+    Found 5-bit comparator equal for signal <data$cmp_eq0000> created at line 48.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Compare_Module> synthesized.
+
+
+Synthesizing Unit <AdderPC4>.
+    Related source file is "C:/Users/George/Desktop/Lab2/AdderPC4.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderPC4> synthesized.
+
+
+Synthesizing Unit <AdderPC4_Imm>.
+    Related source file is "C:/Users/George/Desktop/Lab2/AdderPC4_Imm.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderPC4_Imm> synthesized.
+
+
+Synthesizing Unit <IF_MEM>.
+    Related source file is "C:/Users/George/Desktop/Lab2/IF_MEM.vhd".
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 1024x32-bit ROM for signal <$varindex0000> created at line 64.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IF_MEM> synthesized.
+
+
+Synthesizing Unit <Data_MEM>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Data_MEM.vhd".
+    Found 1024x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Data_MEM> synthesized.
+
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/IFSTAGE.vhd".
+Unit <IFSTAGE> synthesized.
+
+
+Synthesizing Unit <MEMSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/MEMSTAGE.vhd".
+WARNING:Xst:647 - Input <ALU_MEM_Addr<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ALU_MEM_Addr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <MEMSTAGE> synthesized.
+
+
+Synthesizing Unit <Add4bit_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd".
+Unit <Add4bit_Unit> synthesized.
+
+
+Synthesizing Unit <Register_File>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Register_File.vhd".
+Unit <Register_File> synthesized.
+
+
+Synthesizing Unit <DECSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd".
+Unit <DECSTAGE> synthesized.
+
+
+Synthesizing Unit <Add32bit_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd".
+    Found 1-bit xor2 for signal <Ovf>.
+Unit <Add32bit_Unit> synthesized.
+
+
+Synthesizing Unit <Sub32_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd".
+    Found 1-bit xor2 for signal <Ovf>.
+Unit <Sub32_Unit> synthesized.
+
+
+Synthesizing Unit <Alu_Top>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Alu_Top.vhd".
+Unit <Alu_Top> synthesized.
+
+
+Synthesizing Unit <ALUSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/ALUSTAGE.vhd".
+Unit <ALUSTAGE> synthesized.
+
+
+Synthesizing Unit <DATAPATH>.
+    Related source file is "C:/Users/George/Desktop/Lab2/DATAPATH.vhd".
+Unit <DATAPATH> synthesized.
+
+
+Synthesizing Unit <YOLO>.
+    Related source file is "C:/Users/George/Desktop/Lab2/YOLO.vhd".
+Unit <YOLO> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port RAM                           : 1
+# ROMs                                                 : 2
+ 1024x32-bit ROM                                       : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 46
+ 1-bit register                                        : 9
+ 2-bit register                                        : 1
+ 32-bit register                                       : 35
+ 4-bit register                                        : 1
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 2
+ 5-bit comparator equal                                : 2
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 130
+ 1-bit xor2                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <c/Fsm/FSM> on signal <Fsm[1:16]> with one-hot encoding.
+-----------------------------
+ State   | Encoding
+-----------------------------
+ start   | 0000000000000001
+ rtype1  | 0000000000000010
+ rtype2  | 0000100000000000
+ rtype3  | 0001000000000000
+ ltype1  | 0000000000000100
+ ltype2  | 0010000000000000
+ itype   | 0000000000001000
+ btype   | 0000000000010000
+ btype1  | 0100000000000000
+ beqtype | 0000000000100000
+ bnetype | 0000000001000000
+ lbtype  | 0000000010000000
+ lwtype  | 0000000100000000
+ sbtype  | 0000001000000000
+ swtype  | 0000010000000000
+ stype   | 1000000000000000
+-----------------------------
+WARNING:Xst:1290 - Hierarchical block <d> is unconnected in block <YOLO>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <c> is unconnected in block <YOLO>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <DATAPATH>.
+INFO:Xst:3045 - The ROM description <dec_stage/regfile/addrDec_Mod/Mrom_data> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3044 - The ROM <if_stage/imem/Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <if_stage/imem/dout>.
+INFO:Xst:3225 - The RAM <if_stage/imem/Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <if_stage/PCto4_Imem> |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <Instr_IftoDec> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <DATAPATH> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Data_MEM>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Data_MEM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x32-bit single-port block RAM                     : 2
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 1087
+ Flip-Flops                                            : 1087
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 2
+ 5-bit comparator equal                                : 2
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 130
+ 1-bit xor2                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dec_stage/regfile/reg0_Mod/data_31> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_30> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_29> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_28> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_27> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_26> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_25> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_24> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_23> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_22> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_21> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_20> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_19> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_18> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_17> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_16> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_15> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_14> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_13> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_12> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_11> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_10> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_9> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_8> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_7> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_6> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_5> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_4> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_3> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_2> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_1> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_0> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <if_stage/pc/data_12> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_13> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_14> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_15> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_16> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_17> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_18> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_19> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_20> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_21> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_22> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_23> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_24> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_25> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_26> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_27> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_28> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_29> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_30> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_31> of sequential type is unconnected in block <DATAPATH>.
+
+Optimizing unit <YOLO> ...
+
+Optimizing unit <CONTROL> ...
+
+Optimizing unit <Imm16_to_32> ...
+
+Optimizing unit <Alu_Top> ...
+
+Optimizing unit <DATAPATH> ...
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Fsm_FSM_FFd2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/RF_B_sel> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Rst> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/PC_sel> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/ALU_func_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/ALU_func_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/ALU_func_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/ALU_func_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Mem_DataOut_sel> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/RF_WrData_sel_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/RF_WrData_sel_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/ALU_Bin_sel> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Mem_WrEn> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/Mem_DataIn_sel> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/PC_LdEn> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <c/RF_WrEn> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/imm_16to32/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/mem_stage/mem/Mram_RAM1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/mem_stage/mem/Mram_RAM2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/imem/Mrom__varindex00002> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/imem/Mrom__varindex00001> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg1_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg2_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg4_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg5_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg3_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg6_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg7_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg9_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg10_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg8_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg12_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg13_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg11_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg15Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg16_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg14_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg17_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg18_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg20_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg21_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg19_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg22_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg23_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg25_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg26_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg24_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg27_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg28_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg30_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg31_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_31> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_30> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_29> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_28> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_27> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_26> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_25> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_24> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_23> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_22> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_21> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_20> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_19> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_18> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_17> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_16> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_15> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_14> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_13> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_12> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/dec_stage/regfile/reg29_Mod/data_0> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_11> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_10> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_9> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_8> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_7> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_6> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_5> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_4> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_3> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_2> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_1> of sequential type is unconnected in block <YOLO>.
+WARNING:Xst:2677 - Node <d/if_stage/pc/data_0> of sequential type is unconnected in block <YOLO>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block YOLO, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : YOLO.ngr
+Top Level Output File Name         : YOLO
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of     83     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.50 secs
+ 
+--> 
+
+Total memory usage is 313192 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings : 1181 (   0 filtered)
+Number of infos    :   36 (   0 filtered)
+

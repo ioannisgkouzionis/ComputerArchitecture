@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/George/Desktop/Lab2/Test_YOLO_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test_yolo" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/test_yolo/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/c/fsm" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">fsm</obj_property>
+      <obj_property name="ObjectShortName">fsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/dec_stage/instr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/dec_stage/rf_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/dec_stage/immed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/mux_Mem_Addr/out_mux" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mux[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mux[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/mem_stage/alu_mem_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/mem_stage/mem_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_dataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_dataout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/alu_stage/rf_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/alu_stage/muxtoalu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">muxtoalu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">muxtoalu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/alu_stage/alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/alu_stage/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/muxPC_Imm/out_mux" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mux[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mux[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/muxtopc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">muxtopc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">muxtopc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/pc_immed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_immed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_immed[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/pcto4_imem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcto4_imem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcto4_imem[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/four_immed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">four_immed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">four_immed[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/immed_mux" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immed_mux[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immed_mux[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/muxPC_Imm/sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_yolo/uut/d/if_stage/mux_2to1/sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+</wave_config>

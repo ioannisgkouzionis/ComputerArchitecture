@@ -1,0 +1,7 @@
+vhdl isim_temp "Register32bit.vhd"
+vhdl isim_temp "Mux2to1.vhd"
+vhdl isim_temp "IF_MEM.vhd"
+vhdl isim_temp "AdderPC4_Imm.vhd"
+vhdl isim_temp "AdderPC4.vhd"
+vhdl isim_temp "IFSTAGE.vhd"
+vhdl isim_temp "Test_IFSTAGE.vhd"

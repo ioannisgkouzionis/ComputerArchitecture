@@ -1,0 +1,47 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/giannis/Documents/XilinxProjects/Lab1B/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/giannis/Documents/XilinxProjects/Lab1B/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1B/Dec5to32.vhd" in Library work.
+Entity <Dec5to32> compiled.
+Entity <Dec5to32> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1B/And_Unit.vhd" in Library work.
+Entity <And_Unit> compiled.
+Entity <And_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register32bit.vhd" in Library work.
+Entity <Register32bit> compiled.
+Entity <Register32bit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1B/Mux32to1.vhd" in Library work.
+Entity <Mux32to1> compiled.
+Entity <Mux32to1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register_File.vhd" in Library work.
+Entity <Register_File> compiled.
+Entity <Register_File> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+
+Total memory usage is 209568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

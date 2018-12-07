@@ -1,0 +1,5 @@
+work	"And_Unit.vhd"
+work	"Dec5to32.vhd"
+work	"Mux32to1.vhd"
+work	"Register32bit.vhd"
+work	"Register_File.vhd"

@@ -1,0 +1,3 @@
+vhdl isim_temp "Data_MEM.vhd"
+vhdl isim_temp "MEMSTAGE.vhd"
+vhdl isim_temp "Test_MEMSTAGE.vhd"

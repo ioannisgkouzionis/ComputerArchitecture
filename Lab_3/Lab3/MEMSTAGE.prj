@@ -1,0 +1,2 @@
+vhdl work "Data_MEM.vhd"
+vhdl work "MEMSTAGE.vhd"

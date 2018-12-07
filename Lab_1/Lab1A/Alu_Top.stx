@@ -1,0 +1,84 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/giannis/Documents/XilinxProjects/Lab1A/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/giannis/Documents/XilinxProjects/Lab1A/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Generate_Propagate_Unit.vhd" in Library work.
+Architecture behavioral of Entity generate_propagate_unit is up to date.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Carry_Unit.vhd" in Library work.
+Architecture behavioral of Entity carry_unit is up to date.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sum_Unit.vhd" in Library work.
+Architecture behavioral of Entity sum_unit is up to date.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Add4bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add4bit_unit is up to date.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Add32bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add32bit_unit is up to date.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sub32_Unit.vhd" in Library work.
+Entity <sub32_unit> compiled.
+Entity <Sub32_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/And_Unit.vhd" in Library work.
+Entity <And_Unit> compiled.
+Entity <And_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Or_Unit.vhd" in Library work.
+Entity <Or_Unit> compiled.
+Entity <Or_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Not_Unit.vhd" in Library work.
+Entity <Not_Unit> compiled.
+Entity <Not_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sra_Unit.vhd" in Library work.
+Entity <Sra_Unit> compiled.
+Entity <Sra_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sr_Unit.vhd" in Library work.
+Entity <Sr_Unit> compiled.
+Entity <Sr_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sl_Unit.vhd" in Library work.
+Entity <Sl_Unit> compiled.
+Entity <Sl_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Rl_Unit.vhd" in Library work.
+Entity <Rl_Unit> compiled.
+Entity <Rl_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Rr_Unit.vhd" in Library work.
+Entity <Rr_Unit> compiled.
+Entity <Rr_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Cout_Unit.vhd" in Library work.
+Entity <Cout_Unit> compiled.
+Entity <Cout_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Overflow_Unit.vhd" in Library work.
+Entity <Overflow_Unit> compiled.
+Entity <Overflow_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Alu_Unit.vhd" in Library work.
+Entity <Alu_Unit> compiled.
+Entity <Alu_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Zero_Unit.vhd" in Library work.
+Entity <Zero_Unit> compiled.
+Entity <Zero_Unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Alu_Top.vhd" in Library work.
+Entity <Alu_Top> compiled.
+Entity <Alu_Top> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> 
+
+Total memory usage is 209616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

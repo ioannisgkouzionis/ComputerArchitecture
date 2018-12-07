@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/giannis/Documents/XilinxProjects/Lab2/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/giannis/Documents/XilinxProjects/Lab2/xst"
+elaborate
+-ifn Imm16_to_32.prj
+-ifmt mixed

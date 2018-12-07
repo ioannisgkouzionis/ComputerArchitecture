@@ -1,0 +1,1311 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> Reading design: DATAPATH.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DATAPATH.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DATAPATH"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : DATAPATH
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd" in Library work.
+Architecture behavioral of Entity generate_propagate_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd" in Library work.
+Architecture behavioral of Entity carry_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd" in Library work.
+Architecture behavioral of Entity sum_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add4bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Dec5to32.vhd" in Library work.
+Architecture behavioral of Entity dec5to32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And_Unit.vhd" in Library work.
+Architecture behavioral of Entity and_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register32bit.vhd" in Library work.
+Architecture behavioral of Entity register32bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux32to1.vhd" in Library work.
+Architecture behavioral of Entity mux32to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Compare_Module.vhd" in Library work.
+Architecture behavioral of Entity compare_module is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add32bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" in Library work.
+Architecture behavioral of Entity sub32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And32_Unit.vhd" in Library work.
+Architecture behavioral of Entity and32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Or_Unit.vhd" in Library work.
+Architecture behavioral of Entity or_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Not_Unit.vhd" in Library work.
+Architecture behavioral of Entity not_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd" in Library work.
+Architecture behavioral of Entity sra_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd" in Library work.
+Architecture behavioral of Entity sr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd" in Library work.
+Architecture behavioral of Entity sl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd" in Library work.
+Architecture behavioral of Entity rl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd" in Library work.
+Architecture behavioral of Entity rr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd" in Library work.
+Architecture behavioral of Entity cout_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd" in Library work.
+Architecture behavioral of Entity overflow_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd" in Library work.
+Architecture behavioral of Entity alu_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd" in Library work.
+Architecture behavioral of Entity zero_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Data_MEM.vhd" in Library work.
+Architecture syn of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/AdderPC4.vhd" in Library work.
+Architecture behavioral of Entity adderpc4 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/AdderPC4_Imm.vhd" in Library work.
+Architecture behavioral of Entity adderpc4_imm is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/IF_MEM.vhd" in Library work.
+Architecture syn of Entity if_mem is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux3to1.vhd" in Library work.
+Architecture behavioral of Entity mux8to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd" in Library work.
+Architecture behavioral of Entity mux2to1_5bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd" in Library work.
+Architecture behavioral of Entity imm16_to_32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register_File.vhd" in Library work.
+Architecture behavioral of Entity register_file is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Top.vhd" in Library work.
+Architecture behavioral of Entity alu_top is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/ALUSTAGE.vhd" in Library work.
+Architecture behavioral of Entity alustage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd" in Library work.
+Architecture behavioral of Entity decstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/IFSTAGE.vhd" in Library work.
+Architecture behavioral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/MEMSTAGE.vhd" in Library work.
+Architecture behavioral of Entity memstage is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero.vhd" in Library work.
+Architecture behavioral of Entity zerofill is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux4to1.vhd" in Library work.
+Architecture behavioral of Entity mux4to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero7to32.vhd" in Library work.
+Architecture behavioral of Entity zero7to32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register8bit.vhd" in Library work.
+Architecture behavioral of Entity register8bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Concatenate.vhd" in Library work.
+Architecture behavioral of Entity concatenate is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/mem_dt_in_ext.vhd" in Library work.
+Architecture behavioral of Entity mem_dt_in_ext is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DATAPATH> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALUSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DECSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEMSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ZeroFill> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux8to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux4to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Zero7to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register8bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Concatenate> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mem_dt_in_ext> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu_Top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1_5bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Imm16_to_32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register_File> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AdderPC4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AdderPC4_Imm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IF_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Data_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Add32bit_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sub32_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <And32_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Or_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Not_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sra_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sr_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sl_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Rl_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Rr_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Cout_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Overflow_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Alu_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Zero_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Dec5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <And_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Register32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux32to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Compare_Module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Add4bit_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Generate_Propagate_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Carry_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sum_Unit> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DATAPATH> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" line 216: Unconnected output port 'Cout' of component 'ALUSTAGE'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" line 216: Unconnected output port 'Ovf' of component 'ALUSTAGE'.
+Entity <DATAPATH> analyzed. Unit <DATAPATH> generated.
+
+Analyzing Entity <ALUSTAGE> in library <work> (Architecture <behavioral>).
+Entity <ALUSTAGE> analyzed. Unit <ALUSTAGE> generated.
+
+Analyzing Entity <Alu_Top> in library <work> (Architecture <behavioral>).
+Entity <Alu_Top> analyzed. Unit <Alu_Top> generated.
+
+Analyzing Entity <Add32bit_Unit> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 55: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 60: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 65: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 70: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 75: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 80: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" line 85: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+Entity <Add32bit_Unit> analyzed. Unit <Add32bit_Unit> generated.
+
+Analyzing Entity <Add4bit_Unit> in library <work> (Architecture <behavioral>).
+Entity <Add4bit_Unit> analyzed. Unit <Add4bit_Unit> generated.
+
+Analyzing Entity <Generate_Propagate_Unit> in library <work> (Architecture <behavioral>).
+Entity <Generate_Propagate_Unit> analyzed. Unit <Generate_Propagate_Unit> generated.
+
+Analyzing Entity <Carry_Unit> in library <work> (Architecture <behavioral>).
+Entity <Carry_Unit> analyzed. Unit <Carry_Unit> generated.
+
+Analyzing Entity <Sum_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sum_Unit> analyzed. Unit <Sum_Unit> generated.
+
+Analyzing Entity <Sub32_Unit> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 58: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 63: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 68: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 73: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 78: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 83: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+WARNING:Xst:753 - "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" line 88: Unconnected output port 'Cout_2' of component 'Add4bit_Unit'.
+Entity <Sub32_Unit> analyzed. Unit <Sub32_Unit> generated.
+
+Analyzing Entity <And32_Unit> in library <work> (Architecture <behavioral>).
+Entity <And32_Unit> analyzed. Unit <And32_Unit> generated.
+
+Analyzing Entity <Or_Unit> in library <work> (Architecture <behavioral>).
+Entity <Or_Unit> analyzed. Unit <Or_Unit> generated.
+
+Analyzing Entity <Not_Unit> in library <work> (Architecture <behavioral>).
+Entity <Not_Unit> analyzed. Unit <Not_Unit> generated.
+
+Analyzing Entity <Sra_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sra_Unit> analyzed. Unit <Sra_Unit> generated.
+
+Analyzing Entity <Sr_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sr_Unit> analyzed. Unit <Sr_Unit> generated.
+
+Analyzing Entity <Sl_Unit> in library <work> (Architecture <behavioral>).
+Entity <Sl_Unit> analyzed. Unit <Sl_Unit> generated.
+
+Analyzing Entity <Rl_Unit> in library <work> (Architecture <behavioral>).
+Entity <Rl_Unit> analyzed. Unit <Rl_Unit> generated.
+
+Analyzing Entity <Rr_Unit> in library <work> (Architecture <behavioral>).
+Entity <Rr_Unit> analyzed. Unit <Rr_Unit> generated.
+
+Analyzing Entity <Cout_Unit> in library <work> (Architecture <behavioral>).
+Entity <Cout_Unit> analyzed. Unit <Cout_Unit> generated.
+
+Analyzing Entity <Overflow_Unit> in library <work> (Architecture <behavioral>).
+Entity <Overflow_Unit> analyzed. Unit <Overflow_Unit> generated.
+
+Analyzing Entity <Alu_Unit> in library <work> (Architecture <behavioral>).
+Entity <Alu_Unit> analyzed. Unit <Alu_Unit> generated.
+
+Analyzing Entity <Zero_Unit> in library <work> (Architecture <behavioral>).
+Entity <Zero_Unit> analyzed. Unit <Zero_Unit> generated.
+
+Analyzing Entity <DECSTAGE> in library <work> (Architecture <behavioral>).
+Entity <DECSTAGE> analyzed. Unit <DECSTAGE> generated.
+
+Analyzing Entity <Mux2to1_5bit> in library <work> (Architecture <behavioral>).
+Entity <Mux2to1_5bit> analyzed. Unit <Mux2to1_5bit> generated.
+
+Analyzing Entity <Imm16_to_32> in library <work> (Architecture <behavioral>).
+Entity <Imm16_to_32> analyzed. Unit <Imm16_to_32> generated.
+
+Analyzing Entity <Register_File> in library <work> (Architecture <behavioral>).
+Entity <Register_File> analyzed. Unit <Register_File> generated.
+
+Analyzing Entity <Dec5to32> in library <work> (Architecture <behavioral>).
+Entity <Dec5to32> analyzed. Unit <Dec5to32> generated.
+
+Analyzing Entity <And_Unit> in library <work> (Architecture <behavioral>).
+Entity <And_Unit> analyzed. Unit <And_Unit> generated.
+
+Analyzing Entity <Mux32to1> in library <work> (Architecture <behavioral>).
+Entity <Mux32to1> analyzed. Unit <Mux32to1> generated.
+
+Analyzing Entity <Compare_Module> in library <work> (Architecture <behavioral>).
+Entity <Compare_Module> analyzed. Unit <Compare_Module> generated.
+
+Analyzing Entity <IFSTAGE> in library <work> (Architecture <behavioral>).
+Entity <IFSTAGE> analyzed. Unit <IFSTAGE> generated.
+
+Analyzing Entity <AdderPC4> in library <work> (Architecture <behavioral>).
+Entity <AdderPC4> analyzed. Unit <AdderPC4> generated.
+
+Analyzing Entity <AdderPC4_Imm> in library <work> (Architecture <behavioral>).
+Entity <AdderPC4_Imm> analyzed. Unit <AdderPC4_Imm> generated.
+
+Analyzing Entity <IF_MEM> in library <work> (Architecture <syn>).
+Entity <IF_MEM> analyzed. Unit <IF_MEM> generated.
+
+Analyzing Entity <MEMSTAGE> in library <work> (Architecture <behavioral>).
+Entity <MEMSTAGE> analyzed. Unit <MEMSTAGE> generated.
+
+Analyzing Entity <Data_MEM> in library <work> (Architecture <syn>).
+Entity <Data_MEM> analyzed. Unit <Data_MEM> generated.
+
+Analyzing Entity <Mux2to1> in library <work> (Architecture <behavioral>).
+Entity <Mux2to1> analyzed. Unit <Mux2to1> generated.
+
+Analyzing Entity <ZeroFill> in library <work> (Architecture <behavioral>).
+Entity <ZeroFill> analyzed. Unit <ZeroFill> generated.
+
+Analyzing Entity <Mux8to1> in library <work> (Architecture <behavioral>).
+Entity <Mux8to1> analyzed. Unit <Mux8to1> generated.
+
+Analyzing Entity <Mux4to1> in library <work> (Architecture <behavioral>).
+Entity <Mux4to1> analyzed. Unit <Mux4to1> generated.
+
+Analyzing Entity <Zero7to32> in library <work> (Architecture <behavioral>).
+Entity <Zero7to32> analyzed. Unit <Zero7to32> generated.
+
+Analyzing Entity <Register8bit> in library <work> (Architecture <behavioral>).
+Entity <Register8bit> analyzed. Unit <Register8bit> generated.
+
+Analyzing Entity <Concatenate> in library <work> (Architecture <behavioral>).
+Entity <Concatenate> analyzed. Unit <Concatenate> generated.
+
+Analyzing Entity <Register32bit> in library <work> (Architecture <behavioral>).
+Entity <Register32bit> analyzed. Unit <Register32bit> generated.
+
+Analyzing Entity <mem_dt_in_ext> in library <work> (Architecture <behavioral>).
+Entity <mem_dt_in_ext> analyzed. Unit <mem_dt_in_ext> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Mux2to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux2to1.vhd".
+Unit <Mux2to1> synthesized.
+
+
+Synthesizing Unit <ZeroFill>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Zero.vhd".
+WARNING:Xst:647 - Input <In0<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ZeroFill> synthesized.
+
+
+Synthesizing Unit <Mux8to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux3to1.vhd".
+    Found 32-bit 8-to-1 multiplexer for signal <data>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <Mux8to1> synthesized.
+
+
+Synthesizing Unit <Mux4to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux4to1.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <data>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Mux4to1> synthesized.
+
+
+Synthesizing Unit <Zero7to32>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Zero7to32.vhd".
+Unit <Zero7to32> synthesized.
+
+
+Synthesizing Unit <Register8bit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Register8bit.vhd".
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Register8bit> synthesized.
+
+
+Synthesizing Unit <Concatenate>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Concatenate.vhd".
+Unit <Concatenate> synthesized.
+
+
+Synthesizing Unit <Register32bit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Register32bit.vhd".
+    Found 32-bit register for signal <data>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register32bit> synthesized.
+
+
+Synthesizing Unit <mem_dt_in_ext>.
+    Related source file is "C:/Users/George/Desktop/Lab2/mem_dt_in_ext.vhd".
+Unit <mem_dt_in_ext> synthesized.
+
+
+Synthesizing Unit <And32_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/And32_Unit.vhd".
+Unit <And32_Unit> synthesized.
+
+
+Synthesizing Unit <Or_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Or_Unit.vhd".
+Unit <Or_Unit> synthesized.
+
+
+Synthesizing Unit <Not_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Not_Unit.vhd".
+Unit <Not_Unit> synthesized.
+
+
+Synthesizing Unit <Sra_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd".
+WARNING:Xst:647 - Input <A<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sra_Unit> synthesized.
+
+
+Synthesizing Unit <Sr_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd".
+WARNING:Xst:647 - Input <A<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sr_Unit> synthesized.
+
+
+Synthesizing Unit <Sl_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd".
+WARNING:Xst:647 - Input <A<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Sl_Unit> synthesized.
+
+
+Synthesizing Unit <Rl_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd".
+Unit <Rl_Unit> synthesized.
+
+
+Synthesizing Unit <Rr_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd".
+Unit <Rr_Unit> synthesized.
+
+
+Synthesizing Unit <Cout_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd".
+Unit <Cout_Unit> synthesized.
+
+
+Synthesizing Unit <Overflow_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd".
+Unit <Overflow_Unit> synthesized.
+
+
+Synthesizing Unit <Alu_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd".
+Unit <Alu_Unit> synthesized.
+
+
+Synthesizing Unit <Zero_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd".
+Unit <Zero_Unit> synthesized.
+
+
+Synthesizing Unit <Generate_Propagate_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd".
+    Found 4-bit xor2 for signal <p>.
+Unit <Generate_Propagate_Unit> synthesized.
+
+
+Synthesizing Unit <Carry_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd".
+Unit <Carry_Unit> synthesized.
+
+
+Synthesizing Unit <Sum_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd".
+WARNING:Xst:647 - Input <c<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit xor2 for signal <s>.
+Unit <Sum_Unit> synthesized.
+
+
+Synthesizing Unit <Mux2to1_5bit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd".
+Unit <Mux2to1_5bit> synthesized.
+
+
+Synthesizing Unit <Imm16_to_32>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <data_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <Imm16_to_32> synthesized.
+
+
+Synthesizing Unit <Dec5to32>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Dec5to32.vhd".
+    Found 32x32-bit ROM for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Dec5to32> synthesized.
+
+
+Synthesizing Unit <And_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/And_Unit.vhd".
+Unit <And_Unit> synthesized.
+
+
+Synthesizing Unit <Mux32to1>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Mux32to1.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <data>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <Mux32to1> synthesized.
+
+
+Synthesizing Unit <Compare_Module>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Compare_Module.vhd".
+    Found 5-bit comparator equal for signal <data$cmp_eq0000> created at line 48.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Compare_Module> synthesized.
+
+
+Synthesizing Unit <AdderPC4>.
+    Related source file is "C:/Users/George/Desktop/Lab2/AdderPC4.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderPC4> synthesized.
+
+
+Synthesizing Unit <AdderPC4_Imm>.
+    Related source file is "C:/Users/George/Desktop/Lab2/AdderPC4_Imm.vhd".
+    Found 32-bit adder for signal <Dout>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderPC4_Imm> synthesized.
+
+
+Synthesizing Unit <IF_MEM>.
+    Related source file is "C:/Users/George/Desktop/Lab2/IF_MEM.vhd".
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 1024x32-bit ROM for signal <$varindex0000> created at line 64.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IF_MEM> synthesized.
+
+
+Synthesizing Unit <Data_MEM>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Data_MEM.vhd".
+    Found 1024x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Data_MEM> synthesized.
+
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/IFSTAGE.vhd".
+Unit <IFSTAGE> synthesized.
+
+
+Synthesizing Unit <MEMSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/MEMSTAGE.vhd".
+WARNING:Xst:647 - Input <ALU_MEM_Addr<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ALU_MEM_Addr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <MEMSTAGE> synthesized.
+
+
+Synthesizing Unit <Add4bit_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd".
+Unit <Add4bit_Unit> synthesized.
+
+
+Synthesizing Unit <Register_File>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Register_File.vhd".
+Unit <Register_File> synthesized.
+
+
+Synthesizing Unit <DECSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd".
+Unit <DECSTAGE> synthesized.
+
+
+Synthesizing Unit <Add32bit_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd".
+    Found 1-bit xor2 for signal <Ovf>.
+Unit <Add32bit_Unit> synthesized.
+
+
+Synthesizing Unit <Sub32_Unit>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd".
+    Found 1-bit xor2 for signal <Ovf>.
+Unit <Sub32_Unit> synthesized.
+
+
+Synthesizing Unit <Alu_Top>.
+    Related source file is "C:/Users/George/Desktop/Lab2/Alu_Top.vhd".
+Unit <Alu_Top> synthesized.
+
+
+Synthesizing Unit <ALUSTAGE>.
+    Related source file is "C:/Users/George/Desktop/Lab2/ALUSTAGE.vhd".
+Unit <ALUSTAGE> synthesized.
+
+
+Synthesizing Unit <DATAPATH>.
+    Related source file is "C:/Users/George/Desktop/Lab2/DATAPATH.vhd".
+Unit <DATAPATH> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port RAM                           : 1
+# ROMs                                                 : 2
+ 1024x32-bit ROM                                       : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 47
+ 32-bit register                                       : 39
+ 8-bit register                                        : 8
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 2
+ 5-bit comparator equal                                : 2
+# Multiplexers                                         : 8
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 4
+ 8-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 130
+ 1-bit xor2                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <cout_Mod> is unconnected in block <alu>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ovf_Mod> is unconnected in block <alu>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <DATAPATH>.
+INFO:Xst:3045 - The ROM description <dec_stage/regfile/addrDec_Mod/Mrom_data> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3044 - The ROM <if_stage/imem/Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <if_stage/imem/dout>.
+INFO:Xst:3225 - The RAM <if_stage/imem/Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <if_stage/PCto4_Imem> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instr>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <DATAPATH> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Data_MEM>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Data_MEM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x32-bit single-port block RAM                     : 2
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 1248
+ Flip-Flops                                            : 1248
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 2
+ 5-bit comparator equal                                : 2
+# Multiplexers                                         : 8
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 4
+ 8-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 130
+ 1-bit xor2                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dec_stage/regfile/reg0_Mod/data_31> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_30> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_29> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_28> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_27> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_26> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_25> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_24> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_23> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_22> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_21> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_20> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_19> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_18> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_17> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_16> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_15> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_14> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_13> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_12> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_11> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_10> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_9> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_8> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_7> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_6> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_5> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_4> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_3> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_2> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_1> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dec_stage/regfile/reg0_Mod/data_0> (without init value) has a constant value of 0 in block <DATAPATH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <if_stage/pc/data_12> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_13> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_14> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_15> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_16> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_17> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_18> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_19> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_20> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_21> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_22> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_23> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_24> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_25> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_26> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_27> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_28> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_29> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_30> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2677 - Node <if_stage/pc/data_31> of sequential type is unconnected in block <DATAPATH>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<0>, dec_stage/mux_8to1/Mmux_data_6, dec_stage/mux_8to1/Mmux_data_5_f5, dec_stage/out_regA<0>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<1>, RF_WrData_sel<2>_610, RF_WrData_sel<2>_5_f510, dec_stage/out_regA<1>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_621, dec_stage/out_regA<2>, RF_WrData_sel<2>_5_f521, dec_stage/muxtoDin<2>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<3>, RF_WrData_sel<2>_624, dec_stage/muxtoDin<3>, RF_WrData_sel<2>_5_f524.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<4>, RF_WrData_sel<2>_625, dec_stage/muxtoDin<4>, RF_WrData_sel<2>_5_f525.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<5>, dec_stage/muxtoDin<5>, RF_WrData_sel<2>_626, RF_WrData_sel<2>_5_f526.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<6>, RF_WrData_sel<2>_627, RF_WrData_sel<2>_5_f527, dec_stage/out_regA<6>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<7>, RF_WrData_sel<2>_628, RF_WrData_sel<2>_5_f528, dec_stage/out_regA<7>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_629, dec_stage/out_regA<8>, RF_WrData_sel<2>_5_f529, dec_stage/muxtoDin<8>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_630, dec_stage/out_regA<9>, dec_stage/muxtoDin<9>, RF_WrData_sel<2>_5_f530.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<10>, RF_WrData_sel<2>_6, dec_stage/muxtoDin<10>, RF_WrData_sel<2>_5_f5.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<11>, RF_WrData_sel<2>_61, dec_stage/muxtoDin<11>, RF_WrData_sel<2>_5_f51.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<12>, RF_WrData_sel<2>_62, RF_WrData_sel<2>_5_f52, dec_stage/out_regA<12>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<13>, RF_WrData_sel<2>_63, RF_WrData_sel<2>_5_f53, dec_stage/out_regA<13>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_64, dec_stage/out_regA<14>, RF_WrData_sel<2>_5_f54, dec_stage/muxtoDin<14>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_65, dec_stage/out_regA<15>, RF_WrData_sel<2>_5_f55, dec_stage/muxtoDin<15>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<16>, RF_WrData_sel<2>_66, dec_stage/muxtoDin<16>, RF_WrData_sel<2>_5_f56.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<17>, RF_WrData_sel<2>_67, dec_stage/muxtoDin<17>, RF_WrData_sel<2>_5_f57.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<18>, RF_WrData_sel<2>_68, RF_WrData_sel<2>_5_f58, dec_stage/out_regA<18>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<19>, RF_WrData_sel<2>_69, RF_WrData_sel<2>_5_f59, dec_stage/out_regA<19>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_611, dec_stage/out_regA<20>, RF_WrData_sel<2>_5_f511, dec_stage/muxtoDin<20>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<21>, RF_WrData_sel<2>_612, dec_stage/muxtoDin<21>, RF_WrData_sel<2>_5_f512.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<22>, RF_WrData_sel<2>_613, dec_stage/muxtoDin<22>, RF_WrData_sel<2>_5_f513.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<23>, dec_stage/muxtoDin<23>, RF_WrData_sel<2>_614, RF_WrData_sel<2>_5_f514.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<24>, dec_stage/muxtoDin<24>, RF_WrData_sel<2>_615, RF_WrData_sel<2>_5_f515.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<25>, RF_WrData_sel<2>_616, dec_stage/out_regA<25>, RF_WrData_sel<2>_5_f516.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: RF_WrData_sel<2>_617, dec_stage/out_regA<26>, RF_WrData_sel<2>_5_f517, dec_stage/muxtoDin<26>.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<27>, RF_WrData_sel<2>_618, dec_stage/muxtoDin<27>, RF_WrData_sel<2>_5_f518.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<28>, RF_WrData_sel<2>_619, dec_stage/muxtoDin<28>, RF_WrData_sel<2>_5_f519.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<29>, dec_stage/muxtoDin<29>, RF_WrData_sel<2>_620, RF_WrData_sel<2>_5_f520.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/out_regA<30>, dec_stage/muxtoDin<30>, RF_WrData_sel<2>_622, RF_WrData_sel<2>_5_f522.
+WARNING:Xst:2170 - Unit DATAPATH : the following signal(s) form a combinatorial loop: dec_stage/muxtoDin<31>, RF_WrData_sel<2>_623, RF_WrData_sel<2>_5_f523, dec_stage/out_regA<31>.
+
+Optimizing unit <DATAPATH> ...
+
+Optimizing unit <Register8bit> ...
+
+Optimizing unit <Imm16_to_32> ...
+
+Optimizing unit <Alu_Top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DATAPATH, actual ratio is 161.
+Optimizing block <DATAPATH> to meet ratio 100 (+ 5) of 960 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <DATAPATH>, final ratio is 158.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1196
+ Flip-Flops                                            : 1196
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DATAPATH.ngr
+Top Level Output File Name         : DATAPATH
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 72
+
+Cell Usage :
+# BELS                             : 3378
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 9
+#      LUT2                        : 14
+#      LUT2_D                      : 14
+#      LUT2_L                      : 12
+#      LUT3                        : 1356
+#      LUT3_D                      : 33
+#      LUT3_L                      : 39
+#      LUT4                        : 634
+#      LUT4_D                      : 24
+#      LUT4_L                      : 54
+#      MUXCY                       : 27
+#      MUXF5                       : 689
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 1228
+#      FDRE                        : 1196
+#      LD                          : 32
+# RAMS                             : 4
+#      RAMB16_S18                  : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 71
+#      IBUF                        : 38
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                     1608  out of    960   167% (*) 
+ Number of Slice Flip Flops:           1228  out of   1920    63%  
+ Number of 4 input LUTs:               2190  out of   1920   114% (*) 
+ Number of IOs:                          72
+ Number of bonded IOBs:                  72  out of     83    86%  
+ Number of BRAMs:                         4  out of      4   100%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------+-------------------------------------+-------+
+Clock Signal                                                                  | Clock buffer(FF name)               | Load  |
+------------------------------------------------------------------------------+-------------------------------------+-------+
+Clk                                                                           | BUFGP                               | 1200  |
+dec_stage/imm_16to32/data_0_not00011(dec_stage/imm_16to32/data_0_not0001116:O)| BUFG(*)(dec_stage/imm_16to32/data_0)| 32    |
+------------------------------------------------------------------------------+-------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 17.381ns (Maximum Frequency: 57.534MHz)
+   Minimum input arrival time before clock: 18.128ns
+   Maximum output required time after clock: 19.493ns
+   Maximum combinational path delay: 20.438ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 17.381ns (frequency: 57.534MHz)
+  Total number of paths / destination ports: 1565725 / 2260
+-------------------------------------------------------------------------
+Delay:               17.381ns (Levels of Logic = 15)
+  Source:            mem_stage/mem/Mram_RAM1 (RAM)
+  Destination:       dec_stage/regB/data_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: mem_stage/mem/Mram_RAM1 to dec_stage/regB/data_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18:CLK->DO12    4   2.436   0.502  mem_stage/mem/Mram_RAM1 (MemOut<12>)
+     LUT4:I3->O            1   0.612   0.000  ALU_A_Sel<2>_42 (ALU_A_Sel<2>_42)
+     MUXF5:I0->O          16   0.278   0.882  ALU_A_Sel<2>_2_f5_1 (alu_rfa<12>1)
+     LUT4:I3->O            1   0.612   0.000  alu_stage/alu/sub_Mod/add15to12/car_Mod/c_1_or0000_SW2_SW1_F (N802)
+     MUXF5:I0->O           3   0.278   0.603  alu_stage/alu/sub_Mod/add15to12/car_Mod/c_1_or0000_SW2_SW1 (N442)
+     LUT3:I0->O            2   0.612   0.410  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW5 (N666)
+     LUT3_L:I2->LO         1   0.612   0.130  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW3_SW0 (N640)
+     LUT3:I2->O            1   0.612   0.509  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW3 (N581)
+     LUT3:I0->O            7   0.612   0.632  alu_stage/alu/sub_Mod/add19to16/car_Mod/c_3_or0000 (alu_stage/alu/sub_Mod/carry<4>)
+     LUT3:I2->O            2   0.612   0.410  alu_stage/alu/sub_Mod/add31to28/car_Mod/c_2_or00001 (alu_stage/alu/sub_Mod/carry<8>)
+     LUT4:I2->O            2   0.612   0.449  alu_stage/alu/alu_Mod/data<31>261 (alu_stage/alu/alu_Mod/data<31>261)
+     LUT3:I1->O            1   0.612   0.360  alu_stage/alu/alu_Mod/data<31>312_SW0 (N547)
+     LUT4:I3->O            1   0.612   0.000  RF_WrData_sel<2>_723 (RF_WrData_sel<2>_723)
+     MUXF5:I0->O           1   0.278   0.509  RF_WrData_sel<2>_5_f5_22 (RF_WrData_sel<2>_5_f523)
+     LUT4:I0->O           33   0.612   1.103  RF_WrData_sel<2>24 (dec_stage/muxtoDin<31>)
+     LUT3:I2->O            1   0.612   0.000  dec_stage/regfile/mux2b_Mod/data<31>1 (dec_stage/out_regB<31>)
+     FDRE:D                    0.268          dec_stage/regB/data_31
+    ----------------------------------------
+    Total                     17.381ns (10.882ns logic, 6.499ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 2221111 / 3514
+-------------------------------------------------------------------------
+Offset:              18.128ns (Levels of Logic = 17)
+  Source:            Choose_Byte_sel<0> (PAD)
+  Destination:       dec_stage/regB/data_31 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Choose_Byte_sel<0> to dec_stage/regB/data_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.106   1.225  Choose_Byte_sel_0_IBUF (Choose_Byte_sel_0_IBUF)
+     LUT3:I0->O            1   0.612   0.000  muxB_4to1/Mmux_data_37 (muxB_4to1/Mmux_data_37)
+     MUXF5:I1->O          27   0.278   1.075  muxB_4to1/Mmux_data_2_f5_6 (ZeroB<7>)
+     LUT4:I3->O            1   0.612   0.000  ALU_Bin_sel<2>4938_G (N897)
+     MUXF5:I1->O           6   0.278   0.638  ALU_Bin_sel<2>4938 (alu_stage/muxtoAlu<7>)
+     LUT4:I1->O            2   0.612   0.449  alu_stage/alu/add_Mod/add7to4/car_Mod/c_2_or00001_SW0 (N349)
+     LUT3:I1->O            1   0.612   0.509  alu_stage/alu/add_Mod/add7to4/car_Mod/c_1_or0000_SW1 (N503)
+     LUT3_D:I0->LO         1   0.612   0.130  alu_stage/alu/add_Mod/add7to4/car_Mod/c_3_or00001 (N1010)
+     LUT3:I2->O            5   0.612   0.568  alu_stage/alu/add_Mod/add11to8/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<2>)
+     LUT3:I2->O           12   0.612   0.847  alu_stage/alu/add_Mod/add19to16/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<4>)
+     LUT3_L:I2->LO         1   0.612   0.103  alu_stage/alu/alu_Mod/data<31>248 (alu_stage/alu/alu_Mod/data<31>248)
+     LUT4:I3->O            2   0.612   0.449  alu_stage/alu/alu_Mod/data<31>261 (alu_stage/alu/alu_Mod/data<31>261)
+     LUT3:I1->O            1   0.612   0.360  alu_stage/alu/alu_Mod/data<31>312_SW0 (N547)
+     LUT4:I3->O            1   0.612   0.000  RF_WrData_sel<2>_723 (RF_WrData_sel<2>_723)
+     MUXF5:I0->O           1   0.278   0.509  RF_WrData_sel<2>_5_f5_22 (RF_WrData_sel<2>_5_f523)
+     LUT4:I0->O           33   0.612   1.103  RF_WrData_sel<2>24 (dec_stage/muxtoDin<31>)
+     LUT3:I2->O            1   0.612   0.000  dec_stage/regfile/mux2b_Mod/data<31>1 (dec_stage/out_regB<31>)
+     FDRE:D                    0.268          dec_stage/regB/data_31
+    ----------------------------------------
+    Total                     18.128ns (10.164ns logic, 7.964ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 42031 / 33
+-------------------------------------------------------------------------
+Offset:              19.493ns (Levels of Logic = 17)
+  Source:            mem_stage/mem/Mram_RAM1 (RAM)
+  Destination:       Zero (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: mem_stage/mem/Mram_RAM1 to Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18:CLK->DO12    4   2.436   0.502  mem_stage/mem/Mram_RAM1 (MemOut<12>)
+     LUT4:I3->O            1   0.612   0.000  ALU_A_Sel<2>_42 (ALU_A_Sel<2>_42)
+     MUXF5:I0->O          16   0.278   0.882  ALU_A_Sel<2>_2_f5_1 (alu_rfa<12>1)
+     LUT4:I3->O            1   0.612   0.000  alu_stage/alu/sub_Mod/add15to12/car_Mod/c_1_or0000_SW2_SW1_F (N802)
+     MUXF5:I0->O           3   0.278   0.603  alu_stage/alu/sub_Mod/add15to12/car_Mod/c_1_or0000_SW2_SW1 (N442)
+     LUT3:I0->O            2   0.612   0.410  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW5 (N666)
+     LUT3_L:I2->LO         1   0.612   0.130  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW3_SW0 (N640)
+     LUT3:I2->O            1   0.612   0.509  alu_stage/alu/sub_Mod/add11to8/car_Mod/c_3_or0000_SW3 (N581)
+     LUT3:I0->O            7   0.612   0.632  alu_stage/alu/sub_Mod/add19to16/car_Mod/c_3_or0000 (alu_stage/alu/sub_Mod/carry<4>)
+     LUT3:I2->O            7   0.612   0.754  alu_stage/alu/sub_Mod/add23to20/car_Mod/c_3_or0000 (alu_stage/alu/sub_Mod/carry<5>)
+     LUT4_L:I0->LO         1   0.612   0.169  alu_stage/alu/alu_Mod/data<27>140 (alu_stage/alu/alu_Mod/data<27>140)
+     LUT4:I1->O            2   0.612   0.410  alu_stage/alu/alu_Mod/data<27>158 (AluOut<27>)
+     LUT4:I2->O            1   0.612   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<4> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<4>)
+     MUXCY:S->O            1   0.404   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.399   0.387  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<6> (Zero1)
+     LUT3:I2->O            1   0.612   0.357  alu_stage/alu/zero_Mod/zero_cmp_eq000041 (Zero_OBUF)
+     OBUF:I->O                 3.169          Zero_OBUF (Zero)
+    ----------------------------------------
+    Total                     19.493ns (13.748ns logic, 5.745ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dec_stage/imm_16to32/data_0_not00011'
+  Total number of paths / destination ports: 7099 / 1
+-------------------------------------------------------------------------
+Offset:              18.874ns (Levels of Logic = 22)
+  Source:            dec_stage/imm_16to32/data_6 (LATCH)
+  Destination:       Zero (PAD)
+  Source Clock:      dec_stage/imm_16to32/data_0_not00011 falling
+
+  Data Path: dec_stage/imm_16to32/data_6 to Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               5   0.588   0.541  dec_stage/imm_16to32/data_6 (dec_stage/imm_16to32/data_6)
+     LUT4:I3->O            1   0.612   0.000  ALU_Bin_sel<2>4532_F (N305)
+     MUXF5:I0->O           2   0.278   0.449  ALU_Bin_sel<2>4532 (ALU_Bin_sel<2>4532)
+     LUT4:I1->O            1   0.612   0.000  ALU_Bin_sel<2>4538_G (N907)
+     MUXF5:I1->O          10   0.278   0.902  ALU_Bin_sel<2>4538 (alu_stage/muxtoAlu<6>)
+     LUT4:I0->O            2   0.612   0.449  alu_stage/alu/add_Mod/add7to4/car_Mod/c_2_or00001_SW0 (N349)
+     LUT3:I1->O            1   0.612   0.509  alu_stage/alu/add_Mod/add7to4/car_Mod/c_1_or0000_SW1 (N503)
+     LUT3_D:I0->LO         1   0.612   0.130  alu_stage/alu/add_Mod/add7to4/car_Mod/c_3_or00001 (N1010)
+     LUT3:I2->O            5   0.612   0.568  alu_stage/alu/add_Mod/add11to8/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<2>)
+     LUT3:I2->O           12   0.612   0.820  alu_stage/alu/add_Mod/add19to16/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<4>)
+     LUT4_L:I3->LO         1   0.612   0.103  alu_stage/alu/alu_Mod/data<21>105 (alu_stage/alu/alu_Mod/data<21>105)
+     LUT4:I3->O            2   0.612   0.532  alu_stage/alu/alu_Mod/data<21>215_SW0 (N207)
+     LUT4:I0->O            2   0.612   0.410  alu_stage/alu/alu_Mod/data<21>215 (AluOut<21>)
+     LUT3:I2->O            1   0.612   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<0> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<0> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<1> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<2> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<3> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.399   0.387  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<6> (Zero1)
+     LUT3:I2->O            1   0.612   0.357  alu_stage/alu/zero_Mod/zero_cmp_eq000041 (Zero_OBUF)
+     OBUF:I->O                 3.169          Zero_OBUF (Zero)
+    ----------------------------------------
+    Total                     18.874ns (12.718ns logic, 6.156ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 63249 / 1
+-------------------------------------------------------------------------
+Delay:               20.438ns (Levels of Logic = 23)
+  Source:            Choose_Byte_sel<0> (PAD)
+  Destination:       Zero (PAD)
+
+  Data Path: Choose_Byte_sel<0> to Zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.106   1.225  Choose_Byte_sel_0_IBUF (Choose_Byte_sel_0_IBUF)
+     LUT3:I0->O            1   0.612   0.000  muxB_4to1/Mmux_data_37 (muxB_4to1/Mmux_data_37)
+     MUXF5:I1->O          27   0.278   1.075  muxB_4to1/Mmux_data_2_f5_6 (ZeroB<7>)
+     LUT4:I3->O            1   0.612   0.000  ALU_Bin_sel<2>4938_G (N897)
+     MUXF5:I1->O           6   0.278   0.638  ALU_Bin_sel<2>4938 (alu_stage/muxtoAlu<7>)
+     LUT4:I1->O            2   0.612   0.449  alu_stage/alu/add_Mod/add7to4/car_Mod/c_2_or00001_SW0 (N349)
+     LUT3:I1->O            1   0.612   0.509  alu_stage/alu/add_Mod/add7to4/car_Mod/c_1_or0000_SW1 (N503)
+     LUT3_D:I0->LO         1   0.612   0.130  alu_stage/alu/add_Mod/add7to4/car_Mod/c_3_or00001 (N1010)
+     LUT3:I2->O            5   0.612   0.568  alu_stage/alu/add_Mod/add11to8/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<2>)
+     LUT3:I2->O           12   0.612   0.820  alu_stage/alu/add_Mod/add19to16/car_Mod/c_3_or00001 (alu_stage/alu/add_Mod/carry<4>)
+     LUT4_L:I3->LO         1   0.612   0.103  alu_stage/alu/alu_Mod/data<21>105 (alu_stage/alu/alu_Mod/data<21>105)
+     LUT4:I3->O            2   0.612   0.532  alu_stage/alu/alu_Mod/data<21>215_SW0 (N207)
+     LUT4:I0->O            2   0.612   0.410  alu_stage/alu/alu_Mod/data<21>215 (AluOut<21>)
+     LUT3:I2->O            1   0.612   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<0> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<0> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<1> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<2> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<3> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5> (alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.399   0.387  alu_stage/alu/zero_Mod/zero_cmp_eq0000_wg_cy<6> (Zero1)
+     LUT3:I2->O            1   0.612   0.357  alu_stage/alu/zero_Mod/zero_cmp_eq000041 (Zero_OBUF)
+     OBUF:I->O                 3.169          Zero_OBUF (Zero)
+    ----------------------------------------
+    Total                     20.438ns (13.236ns logic, 7.202ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.86 secs
+ 
+--> 
+
+Total memory usage is 325532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  144 (   0 filtered)
+Number of infos    :   36 (   0 filtered)
+

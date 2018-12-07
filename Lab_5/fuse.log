@@ -1,0 +1,117 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/George/Desktop/Lab2/Test_Datapath_isim_beh.exe -prj C:/Users/George/Desktop/Lab2/Test_Datapath_beh.prj work.Test_Datapath 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Register32bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Or_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Not_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Mux32to1.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Mux2to1.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Dec5to32.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Compare_Module.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/And_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/And32_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/sub.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Register_File.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Mux4to1.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Mux3to1.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/IF_MEM.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Data_MEM.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Alu_Top.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/AdderPC4_Imm.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/AdderPC4.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Zero.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/register5bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/register4bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/register2bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/register1bit.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/pipe_control.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/MEMSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/khola.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/IFSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/forward.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/ALUSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/DATAPATH.vhd" into library work
+Parsing VHDL file "C:/Users/George/Desktop/Lab2/Test_Datapath.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity Generate_Propagate_Unit [generate_propagate_unit_default]
+Compiling architecture behavioral of entity Carry_Unit [carry_unit_default]
+Compiling architecture behavioral of entity Sum_Unit [sum_unit_default]
+Compiling architecture behavioral of entity Add4bit_Unit [add4bit_unit_default]
+Compiling architecture behavioral of entity Add32bit_Unit [add32bit_unit_default]
+Compiling architecture behavioral of entity Sub32_Unit [sub32_unit_default]
+Compiling architecture behavioral of entity And32_Unit [and32_unit_default]
+Compiling architecture behavioral of entity Or_Unit [or_unit_default]
+Compiling architecture behavioral of entity Not_Unit [not_unit_default]
+Compiling architecture behavioral of entity Sra_Unit [sra_unit_default]
+Compiling architecture behavioral of entity Sr_Unit [sr_unit_default]
+Compiling architecture behavioral of entity Sl_Unit [sl_unit_default]
+Compiling architecture behavioral of entity Rl_Unit [rl_unit_default]
+Compiling architecture behavioral of entity Rr_Unit [rr_unit_default]
+Compiling architecture behavioral of entity Cout_Unit [cout_unit_default]
+Compiling architecture behavioral of entity Overflow_Unit [overflow_unit_default]
+Compiling architecture behavioral of entity Alu_Unit [alu_unit_default]
+Compiling architecture behavioral of entity Zero_Unit [zero_unit_default]
+Compiling architecture behavioral of entity Alu_Top [alu_top_default]
+Compiling architecture behavioral of entity Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity ALUSTAGE [alustage_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Mux3to1 [mux3to1_default]
+Compiling architecture behavioral of entity Mux2to1_5bit [mux2to1_5bit_default]
+Compiling architecture behavioral of entity Imm16_to_32 [imm16_to_32_default]
+Compiling architecture behavioral of entity Dec5to32 [dec5to32_default]
+Compiling architecture behavioral of entity And_Unit [and_unit_default]
+Compiling architecture behavioral of entity Register32bit [register32bit_default]
+Compiling architecture behavioral of entity Mux32to1 [mux32to1_default]
+Compiling architecture behavioral of entity Compare_Module [compare_module_default]
+Compiling architecture behavioral of entity Register_File [register_file_default]
+Compiling architecture behavioral of entity DECSTAGE [decstage_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity AdderPC4 [adderpc4_default]
+Compiling architecture behavioral of entity AdderPC4_Imm [adderpc4_imm_default]
+Compiling architecture syn of entity IF_MEM [if_mem_default]
+Compiling architecture behavioral of entity meion_4 [meion_4_default]
+Compiling architecture behavioral of entity IFSTAGE [ifstage_default]
+Compiling architecture syn of entity Data_MEM [data_mem_default]
+Compiling architecture behavioral of entity MEMSTAGE [memstage_default]
+Compiling architecture behavioral of entity ZeroFill [zerofill_default]
+Compiling architecture behavioral of entity pipe_control [pipe_control_default]
+Compiling architecture behavioral of entity register1bit [register1bit_default]
+Compiling architecture behavioral of entity register2bit [register2bit_default]
+Compiling architecture behavioral of entity register4bit [register4bit_default]
+Compiling architecture behavioral of entity register5bit [register5bit_default]
+Compiling architecture behavioral of entity forward [forward_default]
+Compiling architecture behavioral of entity khola [khola_default]
+Compiling architecture behavioral of entity DATAPATH [datapath_default]
+Compiling architecture behavior of entity test_datapath
+Time Resolution for simulation is 1ps.
+Waiting for 39 sub-compilation(s) to finish...
+Compiled 103 VHDL Units
+Built simulation executable C:/Users/George/Desktop/Lab2/Test_Datapath_isim_beh.exe
+Fuse Memory Usage: 42952 KB
+Fuse CPU Usage: 1154 ms

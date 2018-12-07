@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/George/Desktop/Lab2/Test_Datapath_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test_datapath" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/test_datapath/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/if_stage/pcto4_imem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcto4_imem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcto4_imem[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec2_RF_WrEn/din" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din</obj_property>
+      <obj_property name="ObjectShortName">din</obj_property>
+      <obj_property name="label">rf_wrEn_din</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec2_RF_WrEn/dout" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+      <obj_property name="label">rf_wrEn_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec3_RF_WrData_sel/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[1:0]</obj_property>
+      <obj_property name="ObjectShortName">din[1:0]</obj_property>
+      <obj_property name="label">rf_wrData_din[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec3_RF_WrData_sel/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[1:0]</obj_property>
+      <obj_property name="label">rf_wrData_dout[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec4_ALU_Bin_sel/din" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din</obj_property>
+      <obj_property name="ObjectShortName">din</obj_property>
+      <obj_property name="label">rf_alu_binSel_din</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec4_ALU_Bin_sel/dout" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+      <obj_property name="label">rf_alu_binSel_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec9_rd/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[4:0]</obj_property>
+      <obj_property name="ObjectShortName">din[4:0]</obj_property>
+      <obj_property name="label">rf_rd_din[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec9_rd/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[4:0]</obj_property>
+      <obj_property name="label">rf_rd_dout[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec10_Immed/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="label">rf_Immed_din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/dec10_Immed/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">rf_Immed_dout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu2_RF_WrEn/din" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din</obj_property>
+      <obj_property name="ObjectShortName">din</obj_property>
+      <obj_property name="label">alu_RfWrEn_din</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu2_RF_WrEn/dout" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+      <obj_property name="label">alu_RfWrEn_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu3_RF_WrData_sel/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[1:0]</obj_property>
+      <obj_property name="ObjectShortName">din[1:0]</obj_property>
+      <obj_property name="label">alu_RfData_sel_din[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu3_RF_WrData_sel/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[1:0]</obj_property>
+      <obj_property name="label">alu_RfData_sel_dout[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu7_rd/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[4:0]</obj_property>
+      <obj_property name="ObjectShortName">din[4:0]</obj_property>
+      <obj_property name="label">alu_rd_din[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu7_rd/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[4:0]</obj_property>
+      <obj_property name="label">alu_rd_dout[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu8_AluOut/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="label">alu_AluOut_din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu8_AluOut/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">alu_AluOut_dout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu10_Immed/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="label">alu_Immed_din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/alu10_Immed/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">alu_Immed_dout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem2_RF_WrEn/din" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din</obj_property>
+      <obj_property name="ObjectShortName">din</obj_property>
+      <obj_property name="label">mem_RF_WrEn_din</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem2_RF_WrEn/dout" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+      <obj_property name="label">mem_RF_WrEn_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem3_RF_WrData_sel/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[1:0]</obj_property>
+      <obj_property name="ObjectShortName">din[1:0]</obj_property>
+      <obj_property name="label">mem_RF_WrDataSel_din[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem3_RF_WrData_sel/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[1:0]</obj_property>
+      <obj_property name="label">mem_RF_WrDataSel_dout[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem4_rd/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[4:0]</obj_property>
+      <obj_property name="ObjectShortName">din[4:0]</obj_property>
+      <obj_property name="label">mem_rd_din[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem4_rd/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[4:0]</obj_property>
+      <obj_property name="label">mem_rd_dout[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem5_AluOut/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="label">mem_AluOut_din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem5_AluOut/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">mem_AluOut_dout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem7_Immed/din" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="label">mem_Immed_din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_datapath/uut/mem7_Immed/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">mem_Immed_dout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

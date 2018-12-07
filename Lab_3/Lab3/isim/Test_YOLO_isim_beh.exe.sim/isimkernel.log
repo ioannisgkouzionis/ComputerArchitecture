@@ -1,0 +1,29 @@
+Command line:
+   Test_YOLO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65090
+
+Wed Apr 01 13:58:53 2015
+
+
+ Elaboration Time: 0.124801 sec
+
+ Current Memory Usage: 572.83 Meg
+
+ Total Signals          : 1055
+ Total Nets             : 69710
+ Total Signal Drivers   : 475
+ Total Blocks           : 180
+ Total Primitive Blocks : 153
+ Total Processes        : 463
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 70610
+Total Line Count : 913
+
+ Total Simulation Time: 0.280801 sec
+
+ Current Memory Usage: 572.83 Meg
+
+Wed Apr 01 14:00:05 2015
+

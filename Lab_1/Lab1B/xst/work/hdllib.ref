@@ -1,0 +1,10 @@
+AR register_file behavioral C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register_File.vhd sub00/vhpl09 1425128780
+EN mux32to1 NULL C:/Users/giannis/Documents/XilinxProjects/Lab1B/Mux32to1.vhd sub00/vhpl06 1425128777
+AR and_unit behavioral C:/Users/giannis/Documents/XilinxProjects/Lab1B/And_Unit.vhd sub00/vhpl03 1425128774
+AR dec5to32 behavioral C:/Users/giannis/Documents/XilinxProjects/Lab1B/Dec5to32.vhd sub00/vhpl01 1425128772
+EN register32bit NULL C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register32bit.vhd sub00/vhpl04 1425128775
+AR register32bit behavioral C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register32bit.vhd sub00/vhpl05 1425128776
+EN and_unit NULL C:/Users/giannis/Documents/XilinxProjects/Lab1B/And_Unit.vhd sub00/vhpl02 1425128773
+EN register_file NULL C:/Users/giannis/Documents/XilinxProjects/Lab1B/Register_File.vhd sub00/vhpl08 1425128779
+EN dec5to32 NULL C:/Users/giannis/Documents/XilinxProjects/Lab1B/Dec5to32.vhd sub00/vhpl00 1425128771
+AR mux32to1 behavioral C:/Users/giannis/Documents/XilinxProjects/Lab1B/Mux32to1.vhd sub00/vhpl07 1425128778

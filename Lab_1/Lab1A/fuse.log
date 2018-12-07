@@ -1,0 +1,55 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/giannis/Documents/XilinxProjects/Lab1A/AluTop_Test_isim_beh.exe -prj C:/Users/giannis/Documents/XilinxProjects/Lab1A/AluTop_Test_beh.prj work.AluTop_Test 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sum_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Generate_Propagate_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Carry_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Add4bit_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Zero_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sub32_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sr_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sra_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Sl_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Rr_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Rl_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Overflow_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Or_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Not_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Cout_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/And_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Alu_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Add32bit_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/Alu_Top.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Documents/XilinxProjects/Lab1A/AluTop_Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Generate_Propagate_Unit [generate_propagate_unit_default]
+Compiling architecture behavioral of entity Carry_Unit [carry_unit_default]
+Compiling architecture behavioral of entity Sum_Unit [sum_unit_default]
+Compiling architecture behavioral of entity Add4bit_Unit [add4bit_unit_default]
+Compiling architecture behavioral of entity Add32bit_Unit [add32bit_unit_default]
+Compiling architecture behavioral of entity Sub32_Unit [sub32_unit_default]
+Compiling architecture behavioral of entity And_Unit [and_unit_default]
+Compiling architecture behavioral of entity Or_Unit [or_unit_default]
+Compiling architecture behavioral of entity Not_Unit [not_unit_default]
+Compiling architecture behavioral of entity Sra_Unit [sra_unit_default]
+Compiling architecture behavioral of entity Sr_Unit [sr_unit_default]
+Compiling architecture behavioral of entity Sl_Unit [sl_unit_default]
+Compiling architecture behavioral of entity Rl_Unit [rl_unit_default]
+Compiling architecture behavioral of entity Rr_Unit [rr_unit_default]
+Compiling architecture behavioral of entity Cout_Unit [cout_unit_default]
+Compiling architecture behavioral of entity Overflow_Unit [overflow_unit_default]
+Compiling architecture behavioral of entity Alu_Unit [alu_unit_default]
+Compiling architecture behavioral of entity Zero_Unit [zero_unit_default]
+Compiling architecture behavioral of entity Alu_Top [alu_top_default]
+Compiling architecture behavior of entity alutop_test
+Time Resolution for simulation is 1ps.
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 41 VHDL Units
+Built simulation executable C:/Users/giannis/Documents/XilinxProjects/Lab1A/AluTop_Test_isim_beh.exe
+Fuse Memory Usage: 28008 KB
+Fuse CPU Usage: 859 ms

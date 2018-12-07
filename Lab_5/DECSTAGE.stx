@@ -1,0 +1,55 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/George/Desktop/Lab2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/George/Desktop/Lab2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Dec5to32.vhd" in Library work.
+Architecture behavioral of Entity dec5to32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And_Unit.vhd" in Library work.
+Architecture behavioral of Entity and_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register32bit.vhd" in Library work.
+Architecture behavioral of Entity register32bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux32to1.vhd" in Library work.
+Architecture behavioral of Entity mux32to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Compare_Module.vhd" in Library work.
+Architecture behavioral of Entity compare_module is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux3to1.vhd" in Library work.
+Architecture behavioral of Entity mux3to1 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Mux2to1_5bit.vhd" in Library work.
+Architecture behavioral of Entity mux2to1_5bit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Imm16_to_32.vhd" in Library work.
+Architecture behavioral of Entity imm16_to_32 is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Register_File.vhd" in Library work.
+Architecture behavioral of Entity register_file is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/DECSTAGE.vhd" in Library work.
+Entity <decstage> compiled.
+Entity <decstage> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> 
+
+Total memory usage is 216128 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

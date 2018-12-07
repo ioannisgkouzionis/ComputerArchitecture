@@ -1,0 +1,31 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/giannis/Downloads/Xilinx/Lab1B/Register_File_Test_isim_beh.exe -prj C:/Users/giannis/Downloads/Xilinx/Lab1B/Register_File_Test_beh.prj work.Register_File_Test 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Register32bit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Mux32to1.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Mux2to1.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Dec5to32.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Compare_Module.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/And_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Register_File.vhd" into library work
+Parsing VHDL file "C:/Users/giannis/Downloads/Xilinx/Lab1B/Register_File_Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Dec5to32 [dec5to32_default]
+Compiling architecture behavioral of entity And_Unit [and_unit_default]
+Compiling architecture behavioral of entity Register32bit [register32bit_default]
+Compiling architecture behavioral of entity Mux32to1 [mux32to1_default]
+Compiling architecture behavioral of entity Compare_Module [compare_module_default]
+Compiling architecture behavioral of entity Mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity Register_File [register_file_default]
+Compiling architecture behavior of entity register_file_test
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable C:/Users/giannis/Downloads/Xilinx/Lab1B/Register_File_Test_isim_beh.exe
+Fuse Memory Usage: 29100 KB
+Fuse CPU Usage: 530 ms

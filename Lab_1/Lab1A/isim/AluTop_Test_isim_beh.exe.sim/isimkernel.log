@@ -1,0 +1,29 @@
+Command line:
+   AluTop_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49914
+
+Mon Mar 02 21:59:36 2015
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 360.247 Meg
+
+ Total Signals          : 429
+ Total Nets             : 912
+ Total Signal Drivers   : 323
+ Total Blocks           : 81
+ Total Primitive Blocks : 61
+ Total Processes        : 321
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 1272
+Total Line Count : 388
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 674.836 Meg
+
+Mon Mar 02 22:00:39 2015
+

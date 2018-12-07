@@ -1,0 +1,71 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/George/Desktop/Lab2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/George/Desktop/Lab2/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Generate_Propagate_Unit.vhd" in Library work.
+Architecture behavioral of Entity generate_propagate_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Carry_Unit.vhd" in Library work.
+Architecture behavioral of Entity carry_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sum_Unit.vhd" in Library work.
+Architecture behavioral of Entity sum_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add4bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add4bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Add32bit_Unit.vhd" in Library work.
+Architecture behavioral of Entity add32bit_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sub32_Unit.vhd" in Library work.
+Architecture behavioral of Entity sub32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/And32_Unit.vhd" in Library work.
+Architecture behavioral of Entity and32_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Or_Unit.vhd" in Library work.
+Architecture behavioral of Entity or_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Not_Unit.vhd" in Library work.
+Architecture behavioral of Entity not_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sra_Unit.vhd" in Library work.
+Architecture behavioral of Entity sra_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sr_Unit.vhd" in Library work.
+Architecture behavioral of Entity sr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Sl_Unit.vhd" in Library work.
+Architecture behavioral of Entity sl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rl_Unit.vhd" in Library work.
+Architecture behavioral of Entity rl_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Rr_Unit.vhd" in Library work.
+Architecture behavioral of Entity rr_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Cout_Unit.vhd" in Library work.
+Architecture behavioral of Entity cout_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Overflow_Unit.vhd" in Library work.
+Architecture behavioral of Entity overflow_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Unit.vhd" in Library work.
+Architecture behavioral of Entity alu_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Zero_Unit.vhd" in Library work.
+Architecture behavioral of Entity zero_unit is up to date.
+Compiling vhdl file "C:/Users/George/Desktop/Lab2/Alu_Top.vhd" in Library work.
+Entity <alu_top> compiled.
+Entity <alu_top> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+
+Total memory usage is 216500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+vhdl work "Register32bit.vhd"
+vhdl work "Mux32to1.vhd"
+vhdl work "Dec5to32.vhd"
+vhdl work "And_Unit.vhd"
+vhdl work "Register_File.vhd"
